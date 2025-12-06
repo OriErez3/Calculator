@@ -13,6 +13,7 @@ function operate(x, y, operator){
         return x/y;
 }
 }
+
 let first_num = null;
 let second_num = null;
 let temp_num = null; 
@@ -76,3 +77,17 @@ equals.addEventListener("click", ()=>{
     second_num = null; 
 });
 container.appendChild(equals);
+
+const clear = document.createElement("button");
+clear.classList.add("numbers");
+clear.textContent = "CE";
+clear.addEventListener("click", ()=>{
+    first_num = null;
+    second_num = null;
+ temp_num = null; 
+ ans = null;
+ operation = "";
+ next_num = false; 
+ screen.value = "0";
+})
+container.appendChild(clear);

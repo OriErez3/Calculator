@@ -1,4 +1,16 @@
-#container{
+#oppscontainer{
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    width: 100px;
+    height: 100px;
+
+}
+
+.opperator{
+    display: flex;
+    flex: 1 0 1;
+    justify-content: space-evenly;
+    direction: row;
+    border: 3px solid; 
+
 }
